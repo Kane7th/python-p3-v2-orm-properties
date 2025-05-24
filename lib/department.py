@@ -40,12 +40,12 @@ class Department:
                 "Location must be a non-empty string"
             )
 
-    @classmethod
+    @classmethod 
     def create_table(cls):
         """ Create a new table to persist the attributes of Department instances """
         sql = """
             CREATE TABLE IF NOT EXISTS departments (
-            id INTEGER PRIMARY KEY,
+            id INTEGER PRIMARY KEY, 
             name TEXT,
             location TEXT)
         """
